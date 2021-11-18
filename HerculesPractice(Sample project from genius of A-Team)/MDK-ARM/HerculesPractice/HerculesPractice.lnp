@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"herculespractice\startup_stm32f429xx.o"
+"herculespractice\main.o"
+"herculespractice\stm32f4xx_it.o"
+"herculespractice\stm32f4xx_hal_msp.o"
+"herculespractice\stm32f4xx_hal_tim.o"
+"herculespractice\stm32f4xx_hal_tim_ex.o"
+"herculespractice\stm32f4xx_hal_uart.o"
+"herculespractice\stm32f4xx_hal_rcc.o"
+"herculespractice\stm32f4xx_hal_rcc_ex.o"
+"herculespractice\stm32f4xx_hal_flash.o"
+"herculespractice\stm32f4xx_hal_flash_ex.o"
+"herculespractice\stm32f4xx_hal_flash_ramfunc.o"
+"herculespractice\stm32f4xx_hal_gpio.o"
+"herculespractice\stm32f4xx_hal_dma_ex.o"
+"herculespractice\stm32f4xx_hal_dma.o"
+"herculespractice\stm32f4xx_hal_pwr.o"
+"herculespractice\stm32f4xx_hal_pwr_ex.o"
+"herculespractice\stm32f4xx_hal_cortex.o"
+"herculespractice\stm32f4xx_hal.o"
+"herculespractice\stm32f4xx_hal_exti.o"
+"herculespractice\system_stm32f4xx.o"
+--strict --scatter "HerculesPractice\HerculesPractice.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HerculesPractice.map" -o HerculesPractice\HerculesPractice.axf
