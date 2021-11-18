@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"button_counter\startup_stm32f429xx.o"
+"button_counter\main.o"
+"button_counter\stm32f4xx_it.o"
+"button_counter\stm32f4xx_hal_msp.o"
+"button_counter\stm32f4xx_hal_tim.o"
+"button_counter\stm32f4xx_hal_tim_ex.o"
+"button_counter\stm32f4xx_hal_rcc.o"
+"button_counter\stm32f4xx_hal_rcc_ex.o"
+"button_counter\stm32f4xx_hal_flash.o"
+"button_counter\stm32f4xx_hal_flash_ex.o"
+"button_counter\stm32f4xx_hal_flash_ramfunc.o"
+"button_counter\stm32f4xx_hal_gpio.o"
+"button_counter\stm32f4xx_hal_dma_ex.o"
+"button_counter\stm32f4xx_hal_dma.o"
+"button_counter\stm32f4xx_hal_pwr.o"
+"button_counter\stm32f4xx_hal_pwr_ex.o"
+"button_counter\stm32f4xx_hal_cortex.o"
+"button_counter\stm32f4xx_hal.o"
+"button_counter\stm32f4xx_hal_exti.o"
+"button_counter\system_stm32f4xx.o"
+--strict --scatter "Button_Counter\Button_Counter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Button_Counter.map" -o Button_Counter\Button_Counter.axf
